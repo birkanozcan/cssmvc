@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html>
+<head>
+
+    <style>
+        *{box-sizing:border-box;}
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align:center;
+            padding:40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+
+        .colomn {
+            flex:25%;
+            max-width:25%;
+            padding: 0 5px;
+        }
+
+        .colomn img {
+            margin-top:10px;
+            vertical-align:middle;
+            width:100%;
+        }
+
+        @@media screen and (max-width:800px) {
+            .colomn {
+                flex: 50%;
+                max-width:100%;
+            }
+         }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Flexbox Image Gallery</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="colomn">
+            <img src="~/img/resim/agac.jpg" />
+            <img src="~/img/resim/bulut.jpg" />
+            <img src="~/img/resim/cimen.jpg" />
+            <img src="~/img/resim/dag.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="~/img/resim/daglar.jpg" />
+            <img src="~/img/resim/deniz.jpg" />
+            <img src="~/img/resim/kopek.jpg" />
+            <img src="~/img/resim/kopru.jpg" />
+
+        </div>
+        <div class="colomn">
+            <img src="~/img/resim/manzara.jpg" />
+            <img src="~/img/resim/orman.jpg" />
+            <img src="~/img/resim/ray.jpg" />
+            <img src="~/img/resim/sandalye.jpg" />
+
+        </div>
+        <div class="colomn">
+            <img src="~/img/resim/sevgili.jpg" />
+            <img src="~/img/resim/yol.jpg" />
+            <img src="~/img/resim/yaprak.jpg" />
+            <img src="~/img/resim/cicek.jpg" />
+        </div>
+
+    </div>
+</body>
+</html>
